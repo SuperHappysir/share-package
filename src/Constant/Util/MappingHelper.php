@@ -3,7 +3,7 @@ namespace SupperHappysir\Constant\Util;
 
 /**
  * Trait MappingHelper 映射获取辅助trait
- * @package App\Constant\util
+ * @package SupperHappysir\Constant\util
  */
 trait MappingHelper
 {

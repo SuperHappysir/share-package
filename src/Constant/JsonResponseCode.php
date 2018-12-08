@@ -7,7 +7,7 @@ use SupperHappysir\Constant\Util\MappingHelper;
 /**
  * Class JsonResponseCode Json响应状态码常量
  *
- * @package App\Constant
+ * @package SupperHappysir\Constant
  */
 class JsonResponseCode
 {

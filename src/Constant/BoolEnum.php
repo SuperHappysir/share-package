@@ -11,7 +11,7 @@ use SupperHappysir\Constant\Util\MappingHelper;
  *
  * @author  luotao
  * @version 1.0
- * @package App\Constant
+ * @package SupperHappysir\Constant
  */
 class BoolEnum
 {
