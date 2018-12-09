@@ -1,18 +1,32 @@
 {
-    "name": "super-happysir/share-package",
-    "description": "happysir 个人公用组件包",
-    "authors": [
-        {
-            "name": "Super Happysir",
-            "email": "luotao954@gmail.com"
-        }
-    ],
-    "require": {
-    	"php": ">=7.1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "SupperHappysir\\": "src/"
-        }
+  "name": "super-happysir/share-package",
+  "description": "happysir 个人公用组件包",
+  "authors": [
+    {
+      "name": "Super Happysir",
+      "email": "luotao954@gmail.com"
     }
+  ],
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SuperHappysir\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SuperHappysir\\Tests\\": "tests/"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
 }

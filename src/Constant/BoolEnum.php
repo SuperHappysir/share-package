@@ -1,8 +1,8 @@
 <?php
 
-namespace SupperHappysir\Constant;
+namespace SuperHappysir\Constant;
 
-use SupperHappysir\Constant\Util\MappingHelper;
+use SuperHappysir\Constant\Util\MappingHelper;
 
 /**
  * Class BoolEnum
@@ -11,7 +11,7 @@ use SupperHappysir\Constant\Util\MappingHelper;
  *
  * @author  luotao
  * @version 1.0
- * @package SupperHappysir\Constant
+ * @package SuperHappysir\Constant
  */
 class BoolEnum
 {

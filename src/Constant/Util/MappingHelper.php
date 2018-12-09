@@ -1,9 +1,9 @@
 <?php
-namespace SupperHappysir\Constant\Util;
+namespace SuperHappysir\Constant\Util;
 
 /**
  * Trait MappingHelper 映射获取辅助trait
- * @package SupperHappysir\Constant\util
+ * @package SuperHappysir\Constant\util
  */
 trait MappingHelper
 {

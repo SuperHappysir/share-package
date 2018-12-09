@@ -1,13 +1,13 @@
 <?php
 
-namespace SupperHappysir\Constant;
+namespace SuperHappysir\Constant;
 
-use SupperHappysir\Constant\Util\MappingHelper;
+use SuperHappysir\Constant\Util\MappingHelper;
 
 /**
  * Class JsonResponseCode Json响应状态码常量
  *
- * @package SupperHappysir\Constant
+ * @package SuperHappysir\Constant
  */
 class JsonResponseCode
 {
