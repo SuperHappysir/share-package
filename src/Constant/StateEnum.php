@@ -22,7 +22,7 @@ class StateEnum
      *
      * @var int
      */
-    public const DEFAULT = 0;
+    public const AWAITING = 0;
     
     /**
      * 启用
@@ -46,6 +46,6 @@ class StateEnum
     protected const MAPPING = [
         self::ENABLED  => '已启用',
         self::DISABLED => '已禁用',
-        self::DEFAULT  => '待审核',
+        self::AWAITING => '待审核',
     ];
 }
