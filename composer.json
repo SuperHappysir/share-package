@@ -16,7 +16,10 @@
   "autoload": {
     "psr-4": {
       "SuperHappysir\\": "src/"
-    }
+    },
+    "files": [
+      "src/Utils/Functions/helpers.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {
