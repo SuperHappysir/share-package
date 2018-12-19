@@ -2,8 +2,6 @@
 
 namespace SuperHappysir\Utils\Response;
 
-use JsonSerializable;
-
 /**
  * Class JsonResponseBody
  *
@@ -13,7 +11,7 @@ use JsonSerializable;
  * @version 1.0
  * @package SuperHappysir\Utils
  */
-class JsonResponseBody implements JsonSerializable
+class JsonResponseBody implements JsonResponseBodyInterface
 {
     /**
      * 响应状态码

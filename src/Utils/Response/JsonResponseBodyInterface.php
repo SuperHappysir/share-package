@@ -5,7 +5,7 @@ namespace SuperHappysir\Utils\Response;
 use JsonSerializable;
 
 /**
- * Class JsonResponseBody
+ * Class JsonResponseBodyInterface
  *
  * json响应 body
  *
@@ -13,121 +13,57 @@ use JsonSerializable;
  * @version 1.0
  * @package SuperHappysir\Utils
  */
-class JsonResponseBody implements JsonSerializable
+interface JsonResponseBodyInterface extends JsonSerializable
 {
     /**
-     * 响应状态码
-     *
-     * @var string
-     */
-    protected $code;
-    
-    /**
-     * 响应信息
-     *
-     * @var string
-     */
-    protected $message;
-    
-    /**
-     * 响应荷载
-     *
-     * @var array
-     */
-    protected $payload = [];
-    
-    /**
-     * JsonResponseBody constructor.
+     * JsonResponseBodyInterface constructor.
      *
      * @param string $code
      * @param string $message
      * @param array  $payload
      */
-    public function __construct(string $code = '', string $message = '', array $payload = [])
-    {
-        $this->code    = $code;
-        $this->message = $message;
-        $this->payload = $payload;
-    }
+    public function __construct(string $code = '', string $message = '', array $payload = []);
     
     /**
      * getCode
      *
      * @return string
      */
-    public function getCode() : string
-    {
-        return $this->code;
-    }
+    public function getCode() : string;
     
     /**
      * @param string $code
      */
-    public function setCode(string $code) : void
-    {
-        $this->code = $code;
-    }
+    public function setCode(string $code) : void;
     
     /**
      * getMessage
      *
      * @return string
      */
-    public function getMessage() : string
-    {
-        return $this->message;
-    }
+    public function getMessage() : string;
     
     /**
      * @param string $message
      */
-    public function setMessage(string $message) : void
-    {
-        $this->message = $message;
-    }
+    public function setMessage(string $message) : void;
     
     /**
      * getPayload
      *
      * @return array
      */
-    public function getPayload() : array
-    {
-        return $this->payload;
-    }
+    public function getPayload() : array;
     
     /**
      * @param array $payload
      */
-    public function setPayload(array $payload) : void
-    {
-        $this->payload = $payload;
-    }
+    public function setPayload(array $payload) : void;
     
     /**
      * 转换成键值对结构
      *
      * @return array
      */
-    public function toMap() : array
-    {
-        return [
-            'code'    => $this->code,
-            'message' => $this->message,
-            'payload' => (object) $this->payload
-        ];
-    }
-    
-    /**
-     * Specify data which should be serialized to JSON
-     *
-     * @link  https://php.net/manual/en/jsonserializable.jsonserialize.php
-     * @return mixed data which can be serialized by <b>json_encode</b>,
-     * which is a value of any type other than a resource.
-     * @since 5.4.0
-     */
-    public function jsonSerialize()
-    {
-        return $this->toMap();
-    }
+    public function toMap() : array;
 }
