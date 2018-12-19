@@ -2,6 +2,8 @@
 
 namespace SuperHappysir\Utils\Response;
 
+use JsonSerializable;
+
 /**
  * Class JsonResponseBody
  *
@@ -11,7 +13,7 @@ namespace SuperHappysir\Utils\Response;
  * @version 1.0
  * @package SuperHappysir\Utils
  */
-class JsonResponseBody
+class JsonResponseBody implements JsonSerializable
 {
     /**
      * 响应状态码
@@ -114,5 +116,18 @@ class JsonResponseBody
             'message' => $this->message,
             'payload' => (object) $this->payload
         ];
+    }
+    
+    /**
+     * Specify data which should be serialized to JSON
+     *
+     * @link  https://php.net/manual/en/jsonserializable.jsonserialize.php
+     * @return mixed data which can be serialized by <b>json_encode</b>,
+     * which is a value of any type other than a resource.
+     * @since 5.4.0
+     */
+    public function jsonSerialize()
+    {
+        return $this->toMap();
     }
 }
