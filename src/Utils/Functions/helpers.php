@@ -1,5 +1,7 @@
 <?php
 
+use SuperHappysir\Utils\Response\JsonResponseBody;
+
 if (!function_exists('sort_multiplearray')) {
     /**
      * 对二维数组按照某列进行排序
@@ -32,6 +34,22 @@ if (!function_exists('in_arr')) {
         $flipArray = array_flip($array);
         
         return isset($flipArray[$item]);
+    }
+}
+
+if (!function_exists('json_response_body')) {
+    /**
+     * json 响应body
+     *
+     * @param string $code
+     * @param string $message
+     * @param array  $payload
+     *
+     * @return JsonResponseBody
+     */
+    function json_response_body(string $code = '', string $message = '', array $payload = [])
+    {
+        return new JsonResponseBody($code, $message, $payload);
     }
 }
 
