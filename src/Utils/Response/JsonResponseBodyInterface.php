@@ -66,4 +66,16 @@ interface JsonResponseBodyInterface extends JsonSerializable
      * @return array
      */
     public function toMap() : array;
+    
+    /**
+     * getErrors
+     *
+     * @return array
+     */
+    public function getErrors() : array;
+    
+    /**
+     * @param array $errors
+     */
+    public function setErrors(array $errors) : void;
 }

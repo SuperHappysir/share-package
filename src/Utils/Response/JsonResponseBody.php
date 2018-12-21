@@ -28,6 +28,13 @@ class JsonResponseBody implements JsonResponseBodyInterface
     protected $message;
     
     /**
+     * 错误明细
+     *
+     * @var array
+     */
+    protected $errors;
+    
+    /**
      * 响应荷载
      *
      * @var array
@@ -127,5 +134,23 @@ class JsonResponseBody implements JsonResponseBodyInterface
     public function jsonSerialize()
     {
         return $this->toMap();
+    }
+    
+    /**
+     * getErrors
+     *
+     * @return array
+     */
+    public function getErrors() : array
+    {
+        return $this->errors;
+    }
+    
+    /**
+     * @param array $errors
+     */
+    public function setErrors(array $errors) : void
+    {
+        $this->errors = $errors;
     }
 }
