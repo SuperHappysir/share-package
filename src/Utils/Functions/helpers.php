@@ -1,6 +1,7 @@
 <?php
 
 use SuperHappysir\Utils\Response\JsonResponseBody;
+use SuperHappysir\Utils\Response\JsonResponseBodyInterface;
 
 if (!function_exists('sort_multiplearray')) {
     /**
@@ -45,7 +46,7 @@ if (!function_exists('json_response_body')) {
      * @param string $message
      * @param array  $payload
      *
-     * @return JsonResponseBody
+     * @return JsonResponseBodyInterface
      */
     function json_response_body(string $code = '', string $message = '', array $payload = [])
     {
