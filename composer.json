@@ -24,7 +24,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "SuperHappysir\\Tests\\": "tests/"
+      "SuperHappysir\\Support\\Tests\\": "tests/"
     }
   },
   "repositories": {
