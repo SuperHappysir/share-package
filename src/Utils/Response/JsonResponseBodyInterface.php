@@ -61,6 +61,26 @@ interface JsonResponseBodyInterface extends JsonSerializable
     public function setPayload(array $payload) : void;
     
     /**
+     * 携带荷载
+     *
+     * @param string $key
+     * @param mixed  $value
+     *
+     * @return JsonResponseBody
+     */
+    public function withPayload(string $key, $value) : JsonResponseBody;
+    
+    /**
+     * 携带荷载
+     *
+     * @param string $key
+     * @param mixed  $value
+     *
+     * @return JsonResponseBody
+     */
+    public function pushPayload(string $key, $value) : JsonResponseBody;
+    
+    /**
      * 转换成键值对结构
      *
      * @return array

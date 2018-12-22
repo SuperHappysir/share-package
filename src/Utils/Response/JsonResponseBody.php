@@ -110,6 +110,48 @@ class JsonResponseBody implements JsonResponseBodyInterface
     }
     
     /**
+     * 携带指定荷载数据,使用此方法请注意数据覆盖的情况
+     *
+     * @param string $key
+     * @param mixed  $value
+     *
+     * @return JsonResponseBody
+     */
+    public function withPayload(string $key, $value) : JsonResponseBody
+    {
+        $this->payload[$key] = $value;
+        
+        return $this;
+    }
+    
+    /**
+     * 给指定key追加数据
+     *
+     * @param string $key
+     * @param mixed  $value
+     *
+     * @return JsonResponseBody
+     */
+    public function pushPayload(string $key, $value) : JsonResponseBody
+    {
+        if (empty($this->payload[$key])) {
+            $this->payload[$key] = [];
+        }
+        
+        // 仅支持数组类型追加数据
+        if (!is_array($this->payload[$key])
+            && !$this->payload[$key] instanceof \ArrayAccess) {
+            throw new \InvalidArgumentException(
+                sprintf('$this->payload["%s"] not array, appending data is not supported', $key)
+            );
+        }
+    
+        $this->payload[$key] = $value;
+        
+        return $this;
+    }
+    
+    /**
      * 转换成键值对结构
      *
      * @return array
