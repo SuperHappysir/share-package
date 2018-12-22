@@ -1,9 +1,9 @@
 <?php
-namespace SuperHappysir\Constant\Enum\Util;
+namespace SuperHappysir\Support\Constant\Enum\Util;
 
 /**
  * Trait MappingHelper 映射获取辅助trait
- * @package SuperHappysir\Constant\util
+ * @package SuperHappysir\Support\Constant\util
  */
 trait MappingHelper
 {

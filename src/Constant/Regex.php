@@ -1,6 +1,6 @@
 <?php
 
-namespace SuperHappysir\Constant;
+namespace SuperHappysir\Support\Constant;
 
 /**
  * Class Regex

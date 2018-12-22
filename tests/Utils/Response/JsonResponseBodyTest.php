@@ -1,8 +1,8 @@
 <?php
 
-namespace SuperHappysir\Tests\Utils\Response;
+namespace SuperHappysir\Support\Tests\Utils\Response;
 
-use SuperHappysir\Utils\Response\JsonResponseBody;
+use SuperHappysir\Support\Utils\Response\JsonResponseBody;
 
 /**
  * Class JsonResponseBodyTest
@@ -11,7 +11,7 @@ use SuperHappysir\Utils\Response\JsonResponseBody;
  *
  * @author  luotao
  * @version 1.0
- * @package SuperHappysir\Tests\Utils\Response
+ * @package SuperHappysir\Support\Tests\Utils\Response
  */
 class JsonResponseBodyTest extends \PHPUnit_Framework_TestCase
 {

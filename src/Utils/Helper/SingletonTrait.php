@@ -1,6 +1,6 @@
 <?php
 
-namespace SuperHappysir\Utils\Helper;
+namespace SuperHappysir\Support\Utils\Helper;
 
 /**
  * Trait SingletonTrait
@@ -9,7 +9,7 @@ namespace SuperHappysir\Utils\Helper;
  *
  * @author  luotao
  * @version 1.0
- * @package SuperHappysir\Utils\Helper
+ * @package SuperHappysir\Support\Utils\Helper
  */
 trait SingletonTrait
 {

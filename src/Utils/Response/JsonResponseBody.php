@@ -1,6 +1,6 @@
 <?php
 
-namespace SuperHappysir\Utils\Response;
+namespace SuperHappysir\Support\Utils\Response;
 
 /**
  * Class JsonResponseBody
@@ -9,7 +9,7 @@ namespace SuperHappysir\Utils\Response;
  *
  * @author  luotao
  * @version 1.0
- * @package SuperHappysir\Utils
+ * @package SuperHappysir\Support\Utils
  */
 class JsonResponseBody implements JsonResponseBodyInterface
 {

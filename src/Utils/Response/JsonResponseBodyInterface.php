@@ -1,6 +1,6 @@
 <?php
 
-namespace SuperHappysir\Utils\Response;
+namespace SuperHappysir\Support\Utils\Response;
 
 use JsonSerializable;
 
@@ -11,7 +11,7 @@ use JsonSerializable;
  *
  * @author  luotao
  * @version 1.0
- * @package SuperHappysir\Utils
+ * @package SuperHappysir\Support\Utils
  */
 interface JsonResponseBodyInterface extends JsonSerializable
 {

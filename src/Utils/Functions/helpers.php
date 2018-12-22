@@ -1,8 +1,8 @@
 <?php
 
-use SuperHappysir\Constant\Regex;
-use SuperHappysir\Utils\Response\JsonResponseBody;
-use SuperHappysir\Utils\Response\JsonResponseBodyInterface;
+use SuperHappysir\Support\Constant\Regex;
+use SuperHappysir\Support\Utils\Response\JsonResponseBody;
+use SuperHappysir\Support\Utils\Response\JsonResponseBodyInterface;
 
 if (!function_exists('sort_multiplearray')) {
     /**

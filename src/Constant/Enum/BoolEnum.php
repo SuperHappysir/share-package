@@ -1,8 +1,8 @@
 <?php
 
-namespace SuperHappysir\Constant\Enum;
+namespace SuperHappysir\Support\Constant\Enum;
 
-use SuperHappysir\Constant\Enum\Util\MappingHelper;
+use SuperHappysir\Support\Constant\Enum\Util\MappingHelper;
 
 /**
  * Class BoolEnum
@@ -11,7 +11,7 @@ use SuperHappysir\Constant\Enum\Util\MappingHelper;
  *
  * @author  luotao
  * @version 1.0
- * @package SuperHappysir\Constant
+ * @package SuperHappysir\Support\Constant
  */
 class BoolEnum
 {

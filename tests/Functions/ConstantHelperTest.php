@@ -1,6 +1,6 @@
 <?php
 
-namespace SuperHappysir\Tests\Functions;
+namespace SuperHappysir\Support\Tests\Functions;
 
 class ConstantHelperTest extends \PHPUnit_Framework_TestCase
 {
