@@ -146,7 +146,7 @@ class JsonResponseBody implements JsonResponseBodyInterface
             );
         }
     
-        $this->payload[$key] = $value;
+        $this->payload[$key][] = $value;
         
         return $this;
     }
