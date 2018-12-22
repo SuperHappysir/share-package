@@ -1,8 +1,8 @@
 <?php
 
-namespace SuperHappysir\Constant;
+namespace SuperHappysir\Constant\Enum;
 
-use SuperHappysir\Constant\Util\MappingHelper;
+use SuperHappysir\Constant\Enum\Util\MappingHelper;
 
 /**
  * Class DeletedStateEnum

@@ -1,5 +1,6 @@
 <?php
 
+use SuperHappysir\Constant\Regex;
 use SuperHappysir\Utils\Response\JsonResponseBody;
 use SuperHappysir\Utils\Response\JsonResponseBodyInterface;
 
@@ -51,6 +52,20 @@ if (!function_exists('json_response_body')) {
     function json_response_body(string $code = '', string $message = '', array $payload = [])
     {
         return new JsonResponseBody($code, $message, $payload);
+    }
+}
+
+if (!function_exists('is_phone_num')) {
+    /**
+     * 判断给定文本是否是手机号码
+     *
+     * @param string $subject
+     *
+     * @return bool
+     */
+    function is_phone_num($subject)
+    {
+        return preg_match(Regex::PHONE_NUM, $subject) > 0;
     }
 }
 

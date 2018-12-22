@@ -1,5 +1,5 @@
 <?php
-namespace SuperHappysir\Constant\Util;
+namespace SuperHappysir\Constant\Enum\Util;
 
 /**
  * Trait MappingHelper 映射获取辅助trait

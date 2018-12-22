@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\Feature;
+namespace SuperHappysir\Tests\Constant;
 
-use SuperHappysir\Constant\DeletedStateEnum;
+use SuperHappysir\Constant\Enum\DeletedStateEnum;
 
 class ConstantHelperTest extends \PHPUnit_Framework_TestCase
 {
