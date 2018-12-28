@@ -27,6 +27,7 @@
       "SuperHappysir\\Support\\Tests\\": "tests/"
     }
   },
+  "license": "MIT",
   "repositories": {
     "packagist": {
       "type": "composer",
