@@ -2,7 +2,9 @@
 
 namespace SuperHappysir\Support\Tests\Functions;
 
-class ConstantHelperTest extends \PHPUnit_Framework_TestCase
+use PHPUnit_Framework_TestCase;
+
+class ConstantHelperTest extends PHPUnit_Framework_TestCase
 {
     /**
      * 测试给定字符串是手机号码

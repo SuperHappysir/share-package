@@ -2,7 +2,7 @@
 
 namespace SuperHappysir\Support\Constant\Enum;
 
-use SuperHappysir\Support\Constant\Enum\Util\MappingHelper;
+use SuperHappysir\Support\Constant\Enum\Lib\BaseEnum;
 
 /**
  * Class DeletedStateEnum
@@ -13,9 +13,8 @@ use SuperHappysir\Support\Constant\Enum\Util\MappingHelper;
  * @version 1.0
  * @package SuperHappysir\Support\Constant
  */
-class DeletedStateEnum
+class DeletedStateEnum extends BaseEnum
 {
-    use MappingHelper;
     
     /**
      * 正常状态
@@ -36,7 +35,7 @@ class DeletedStateEnum
      *
      * @var array
      */
-    protected const MAPPING = [
+    protected static $translations = [
         self::NORMAL     => '正常',
         self::IS_DELETED => '已删除'
     ];

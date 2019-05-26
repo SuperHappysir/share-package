@@ -2,6 +2,7 @@
 
 namespace SuperHappysir\Support\Tests\Utils\Response;
 
+use PHPUnit_Framework_TestCase;
 use SuperHappysir\Support\Utils\Response\JsonResponseBody;
 
 /**
@@ -13,7 +14,7 @@ use SuperHappysir\Support\Utils\Response\JsonResponseBody;
  * @version 1.0
  * @package SuperHappysir\Support\Tests\Utils\Response
  */
-class JsonResponseBodyTest extends \PHPUnit_Framework_TestCase
+class JsonResponseBodyTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @var JsonResponseBody

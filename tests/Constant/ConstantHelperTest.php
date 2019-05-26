@@ -2,9 +2,10 @@
 
 namespace SuperHappysir\Support\Tests\Constant;
 
+use PHPUnit_Framework_TestCase;
 use SuperHappysir\Support\Constant\Enum\DeletedStateEnum;
 
-class ConstantHelperTest extends \PHPUnit_Framework_TestCase
+class ConstantHelperTest extends PHPUnit_Framework_TestCase
 {
     /**
      * 测试常量名称映射获取方法Null值情况

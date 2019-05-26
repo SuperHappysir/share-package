@@ -2,6 +2,9 @@
 
 namespace SuperHappysir\Support\Utils\Response;
 
+use ArrayAccess;
+use InvalidArgumentException;
+
 /**
  * Class JsonResponseBody
  *
@@ -140,8 +143,8 @@ class JsonResponseBody implements JsonResponseBodyInterface
         
         // 仅支持数组类型追加数据
         if (!is_array($this->payload[$key])
-            && !$this->payload[$key] instanceof \ArrayAccess) {
-            throw new \InvalidArgumentException(
+            && !$this->payload[$key] instanceof ArrayAccess) {
+            throw new InvalidArgumentException(
                 sprintf('$this->payload["%s"] not array, appending data is not supported', $key)
             );
         }

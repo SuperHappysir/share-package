@@ -2,7 +2,7 @@
 
 namespace SuperHappysir\Support\Constant\Enum;
 
-use SuperHappysir\Support\Constant\Enum\Util\MappingHelper;
+use SuperHappysir\Support\Constant\Enum\Lib\BaseEnum;
 
 /**
  * Class StateEnum
@@ -13,10 +13,8 @@ use SuperHappysir\Support\Constant\Enum\Util\MappingHelper;
  * @version 1.0
  * @package SuperHappysir\Support\Constant
  */
-class StateEnum
+class StateEnum extends BaseEnum
 {
-    use MappingHelper;
-    
     /**
      * 待处理状态
      *
@@ -43,7 +41,7 @@ class StateEnum
      *
      * @var array
      */
-    protected const MAPPING = [
+    protected static $translations = [
         self::ENABLED  => '已启用',
         self::DISABLED => '已禁用',
         self::AWAITING => '待审核',

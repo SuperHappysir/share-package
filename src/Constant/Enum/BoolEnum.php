@@ -2,7 +2,7 @@
 
 namespace SuperHappysir\Support\Constant\Enum;
 
-use SuperHappysir\Support\Constant\Enum\Util\MappingHelper;
+use SuperHappysir\Support\Constant\Enum\Lib\BaseEnum;
 
 /**
  * Class BoolEnum
@@ -13,9 +13,8 @@ use SuperHappysir\Support\Constant\Enum\Util\MappingHelper;
  * @version 1.0
  * @package SuperHappysir\Support\Constant
  */
-class BoolEnum
+class BoolEnum extends BaseEnum
 {
-    use MappingHelper;
     
     /**
      * 否
@@ -36,7 +35,7 @@ class BoolEnum
      *
      * @var array
      */
-    protected const MAPPING = [
+    protected static $translations = [
         self::NO  => '否',
         self::YES => '是'
     ];
